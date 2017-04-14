@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>testDemo1</title>
+</head>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+
+<div id="app">
+  <p>{{ message }}</p>
+</div>
+
+<div id="app-2">
+  <span v-bind:title="message">
+    鼠标悬停几秒钟查看此处动态绑定的提示信息！
+  </span>
+</div>
+
+<div id="app-3">                                        
+  <p v-if="seen">现在你看到我了</p>
+</div>
+
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+
+<div id="app-5">
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage">逆转消息</button>
+</div>
+
+<div id="app-6">
+  <p>{{ message }}</p>
+  <input v-model="message">
+</div>
+
+<script type="text/javascript">    
+    var app1 = new Vue({
+      el: '#app',
+      data: {
+        message: 'sasa'
+      }
+    })
+
+    var app2 = new Vue({        // 此时需要熟悉的为 v-bind 绑定属性   声明式渲染
+      el: '#app-2',
+      data: {
+        message: '页面加载于 ' + new Date()
+      }
+    })
+
+    var app3 = new Vue({        // 此时需要熟悉的为 v-if 属性     条件与循环中的条件
+      el: '#app-3',
+      data: {
+        seen: false             // false与true区分数据的显示
+      }
+    })
+
+    var app4 = new Vue({        // 此时需要熟悉的为 v-for  绑定属性 数据会在todos中拿取，其中todos中的数据存储为json的形式存储        条件与循环中的循环
+      el: '#app-4',
+      data: {
+        todos: [
+          { text: '学习 JavaScript' },
+          { text: '学习 Vue' },
+          { text: '整个牛项目' }
+        ]
+      }
+    })
+
+    var app5 = new Vue({        // v-on 指令绑定一个事件监听器，其中对应的方法名为 reverseMessage ，实现的为data中message数据的反转                               处理用户输入
+      el: '#app-5',
+      data: {
+        message: 'Hello Vue.js!'
+      },
+      methods: {
+        reverseMessage: function () {
+          this.message = this.message.split('').reverse().join('')
+        }
+      }
+    })
+
+    var app6 = new Vue({        // v-model 指令实现数据的双向绑定(表单输入和应用状态之间的双向绑定)
+      el: '#app-6',
+      data: {
+        message: 'Hello Vue!'
+      }
+    })
+</script>
+
+</html>
