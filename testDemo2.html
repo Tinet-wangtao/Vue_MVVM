@@ -43,6 +43,24 @@ var app7 = new Vue({
 })
 
 
+// 以下为属性方法的测试
+var data = { a: 1 }
+var vm = new Vue({
+  data: data
+})
+
+// 生命周期的created钩子
+var vm = new Vue({
+  data: {
+    a: 1
+  },
+  created: function () {
+    // `this` 指向 vm 实例
+    console.log('a is: ' + this.a)
+  }
+})
+
+
 </script>
 
 </html>
