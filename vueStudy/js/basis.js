@@ -74,8 +74,45 @@ var vm = new Vue({
 
         counter:0,
 
-        eventName:'eventGreat'
+        eventName:'eventGreat',
 
+        boundMessage:'',
+
+        checked:'true',
+
+        // 存放数据的数组结构形式
+        checkedNames:[
+            'Jack',
+            'John',
+            'Mike'
+        ],
+
+        picked:'',
+
+        selected1:'',
+
+        selected2:'',
+
+        selected3: 'A',
+        options: [
+            { text: 'One', value: 'A' },
+            { text: 'Two', value: 'B' },
+            { text: 'Three', value: 'C' }
+        ],
+
+        selected4: 'A',
+
+        picked2:'',
+
+        toggle:'',
+
+        toggle2:'',
+
+        pick:'',
+
+        a:'testA',
+
+        selected5:''
 	},
 
 	filters:{
