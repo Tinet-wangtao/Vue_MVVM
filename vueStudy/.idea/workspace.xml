@@ -18,8 +18,8 @@
       <file leaf-file-name="basis.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/basis.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="223" column="10" lean-forward="true" selection-start-line="223" selection-start-column="10" selection-end-line="223" selection-end-column="10" />
+            <state relative-caret-position="231">
+              <caret line="220" column="38" lean-forward="true" selection-start-line="220" selection-start-column="38" selection-end-line="220" selection-end-column="38" />
               <folding>
                 <marker date="1492482914590" expanded="true" signature="251:338" ph="..." />
               </folding>
@@ -220,12 +220,12 @@
       <updated>1492390290297</updated>
       <workItem from="1492390292609" duration="18936000" />
       <workItem from="1492476406491" duration="5627000" />
-      <workItem from="1492483911424" duration="46000" />
+      <workItem from="1492483911424" duration="602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24609000" />
+    <option name="totallyTimeSpent" value="25165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -299,8 +299,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/basis.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="223" column="10" lean-forward="true" selection-start-line="223" selection-start-column="10" selection-end-line="223" selection-end-column="10" />
+        <state relative-caret-position="231">
+          <caret line="220" column="38" lean-forward="true" selection-start-line="220" selection-start-column="38" selection-end-line="220" selection-end-column="38" />
           <folding>
             <marker date="1492482914590" expanded="true" signature="251:338" ph="..." />
           </folding>
