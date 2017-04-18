@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>cartDemo</title>
+</head>
+<body>
+    <div id="app">
+
+        <h2>{{title}}</h2>
+
+        <!-- 绑定点击事件，实现更换title的操作 -->
+        <button @click="updateTitle">update</button>
+
+        <!--  计算属性的练习 -->
+        <div id="example">
+            <p>Original message: "{{ message }}"</p>
+            <p>Computed reversed message: "{{ reversedMessage }}"</p>
+        </div>
+
+        <!-- watch 方法练习 -->
+        <p>{{ fullName }}</p>
+
+        <!-- 观察watcher方法练习 -->
+        <p>
+            Ask a yes/no question:
+            <input v-model="question">
+        </p>
+        <p>{{ answer }}</p>
+
+        <!-- 绑定 HTML class -->
+        <!-- 如果 isActive 为 true，那么该div中的class中将会显示active，以此类推 -->
+        <div class="static"
+             v-bind:class="{ active: isActive, 'text-danger': hasError }">
+        </div>
+
+        <!-- 另一种绑定方式，直接绑定数据里的一个对象 -->
+        <div v-bind:class="classObject"></div>
+
+        <!-- 绑定返回对象的计算属性 -->
+        <div v-bind:class="classObject2"></div>
+
+        <!-- 把一个数组传给 v-bind:class ，以应用一个 class 列表 -->
+        <div v-bind:class="[activeClass, errorClass]"></div>
+
+        <!-- 组件注册 -->
+        <my-component class="baz boo"></my-component>
+        <my-component2 v-bind:class="{ active: isActive }"></my-component2>
+
+        <!-- 绑定内联样式 -->
+        <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px'}"></div>
+        <p v-bind:style="styleObject">sas</p>
+
+        <!-- 数组语法绑定样式
+          <div v-bind:style="[baseStyles, overridingStyles]"></div>
+        -->
+
+        <!-- v-if 以及 v-else 使用，当ok为true时，显示if中的内容；为false时，显示else中的内容 -->
+        <h1 v-if="ok">Yes</h1>
+        <h1 v-else>No</h1>
+
+        <template v-if="ok">
+            <h1>Title</h1>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+        </template>
+
+        <!-- 备注：v-else 元素必须紧跟在 v-if 或者 v-else-if 元素的后面——否则它将不会被识别。 -->
+        <div v-if="Math.random() > 0.5">
+            Now you see me
+        </div>
+        <div v-else>
+            Now you don't
+        </div>
+
+        <div v-if="type === 'A'">
+            A
+        </div>
+        <div v-else-if="type === 'B'">
+            B
+        </div>
+        <div v-else-if="type === 'C'">
+            C
+        </div>
+        <div v-else>
+            Not A/B/C
+        </div>
+
+        <!-- 用 key 管理可复用的元素 -->
+        <template v-if="loginType === 'username'">
+            <label>Username</label>
+            <input placeholder="Enter your username" key="username-input">
+        </template>
+        <template v-else>
+            <label>Email</label>
+            <input placeholder="Enter your email address" key="email-input">
+        </template>
+        <button @click="nameOrEmail">{{changeName}}</button>
+
+
+        <!-- v-for 使用 -->
+        <ul id="example-2">
+        <li v-for="(item, index) in items">
+            {{ parentMessage }} - {{ index }} - {{ item.message }}
+        </li>
+        </ul>
+
+        <ul>
+            <template v-for="item in items">
+                <li>{{ item.message }}</li>
+                <li class="divider"></li>
+            </template>
+        </ul>
+
+        <ul id="repeat-object" class="demo">
+            <li v-for="value in object">
+                {{ value }}
+            </li>
+        </ul>
+
+        <div v-for="(value, key) in object">
+            {{ key }} : {{ value }}
+        </div>
+
+        <div v-for="(value, key, index) in object">
+            {{ index }}. {{ key }} : {{ value }}
+        </div>
+
+        <!-- 整数迭代 -->
+        <div v-for="n in 10">
+            <span>{{n}}</span>
+        </div>
+
+        <!-- 组件和v-for -->
+        <div id="todo-list-example">
+            <input
+                    v-model="newTodoText"
+                    v-on:keyup.enter="addNewTodo"
+                    placeholder="Add a todo"
+            >
+            <ul>
+                <li
+                        is="todo-item"
+                        v-for="(todo, index) in todos"
+                        v-bind:title="todo"
+                        v-on:remove="todos.splice(index, 1)"
+                ></li>
+            </ul>
+        </div>
+
+        <div v-for="item in items" :key="item.id">
+            <!-- 内容 -->
+        </div>
+
+
+        <!-- 以下内容为事件处理器的部分 -->
+        <!-- 事件监听 -->
+        <div id="example-1">
+            <button v-on:click="counter += 1">增加 1</button>
+            <p>这个按钮被点击了 {{ counter }} 次。</p>
+        </div>
+
+
+
+        <!-- 方法事情处理器 -->
+        <!-- `greet` 是在下面定义的方法名 -->
+        <button v-on:click="greet">Greet</button>
+
+
+        <!-- 内敛处理器方法 -->
+        <div id="example-3">
+            <button v-on:click="say('hi')">Say hi</button>
+            <button v-on:click="say('what')">Say what</button>
+        </div>
+
+        <button v-on:click="warn('Form cannot be submitted yet.', $event)">Submit</button>
+
+
+        <!-- 以下为事件修饰符的测试 -->
+
+
+        <!-- 此时会监听键盘的按键
+             以下的两种实现都可以，与之对应的分别为js中submit1与submit2方法
+        -->
+        <input v-on:keyup.enter="submit1">
+        <input @keyup.enter="submit2">
+
+
+
+
+
+    </div>
+
+    <script src="js/lib/vue.js"></script>
+    <script src="js/lib/vue-resource.js"></script>
+    <script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+    <script src="js/basis.js"></script>
+</body>
+</html>

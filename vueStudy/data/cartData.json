@@ -1,0 +1,35 @@
+{
+	"status":1,												// 接口返回的成功或者失败
+	"result":{												// 接口返回的结果
+		"totalMoney":19,
+		"list":[
+			{
+				"productId":"6001",
+				"productName":"中华",
+				"productPrice":60,
+				"productQuentity":1,
+				"productImage":"img/yan.jpg",
+				"parts":[
+					{
+						"partId":"1001",
+						"partName":"打火机"
+					}
+				]
+			},
+			{
+				"productId":"6002",
+				"productName":"可乐",
+				"productPrice":2,
+				"productQuentity":3,
+				"productImage":"img/cola.jpg",
+				"parts":[
+					{
+						"partId":"1002",
+						"partName":"吸管"
+					}
+				]
+			}
+		]
+	},
+	"message":1												// 提示的异常信息
+}
