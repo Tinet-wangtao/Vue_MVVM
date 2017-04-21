@@ -7,6 +7,31 @@ Vue.component('my-component2', {
     template: '<p class="foo bar">组件注册2</p>'
 });
 
+// 组件 -- 实现计数操作
+var data = { counter: 0 };
+Vue.component('simple-counter', {
+    template: '<button v-on:click="counter += 1">{{ counter }}</button>',
+    // 技术上 data 的确是一个函数了，因此 Vue 不会警告，
+    // 但是我们返回给每个组件的实例的却引用了同一个data对象
+    data: function () {
+        return data
+    }
+});
+
+
+Vue.component('simple-counter2', {
+    template: '<button v-on:click="counter += 1">{{ counter }}</button>',
+    // 技术上 data 的确是一个函数了，因此 Vue 不会警告，
+    // 但是我们返回给每个组件的实例的却引用了同一个data对象
+    data: function () {
+        return {
+            counter:0
+        }
+    }
+});
+
+
+
 Vue.component('todo-item', {
     template: '\
     <li>\
@@ -15,7 +40,25 @@ Vue.component('todo-item', {
     </li>\
   ',
     props: ['title']
-})
+});
+
+
+// 该组件中显式地用 props 选项声明它期待获得的数据
+Vue.component('child', {
+    // 声明 props
+    props: ['message'],
+    // 就像 data 一样，prop 可以用在模板内
+    // 同样也可以在 vm 实例中像 “this.message” 这样使用
+    template: '<span>{{ message }}</span>'
+});
+
+Vue.component('child2', {
+    // 声明 props
+    props: ['parentMsg'],
+    // 就像 data 一样，prop 可以用在模板内
+    // 同样也可以在 vm 实例中像 “this.message” 这样使用
+    template: '<span>{{ parentMsg }}</span>'
+});
 
 var vm = new Vue({
 	el:"#app",
@@ -112,7 +155,9 @@ var vm = new Vue({
 
         a:'testA',
 
-        selected5:''
+        selected5:'',
+
+        parentMsg:''
 	},
 
 	filters:{

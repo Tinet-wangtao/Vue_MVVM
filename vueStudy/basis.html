@@ -43,11 +43,7 @@
         <!-- 把一个数组传给 v-bind:class ，以应用一个 class 列表 -->
         <div v-bind:class="[activeClass, errorClass]"></div>
 
-        <!-- 组件注册 -->
-        <my-component class="baz boo"></my-component>
-        <my-component2 v-bind:class="{ active: isActive }"></my-component2>
 
-        <!-- 绑定内联样式 -->
         <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px'}"></div>
         <p v-bind:style="styleObject">sas</p>
 
@@ -290,6 +286,34 @@
             <option v-bind:value="{ number: 123 }">123</option>
         </select>
 
+        <p>--------------------- 组件练习 -----------------------------</p>
+
+        <!-- 以下为组件注册的练习代码示例 -->
+        <my-component class="baz boo"></my-component>
+        <my-component2 v-bind:class="{ active: isActive }"></my-component2>
+
+
+        <div id="componen-div">
+            <simple-counter></simple-counter>
+            <simple-counter></simple-counter>
+            <simple-counter></simple-counter>
+        </div>
+
+        <div id="componen-div2">
+            <simple-counter2></simple-counter2>
+            <simple-counter2></simple-counter2>
+            <simple-counter2></simple-counter2>
+        </div>
+
+        <child message="hello!"></child>
+
+
+        <div>
+            <input v-model="parentMsg">
+            <br>
+            <child2 v-bind:my-message="parentMsg"></child2>
+        </div>
+        <child2 :my-message="parentMsg"></child2>
 
     </div>
 

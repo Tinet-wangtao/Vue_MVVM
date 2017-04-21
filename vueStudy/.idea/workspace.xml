@@ -18,20 +18,40 @@
       <file leaf-file-name="basis.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/basis.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="114" column="19" lean-forward="false" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+            <state relative-caret-position="-69">
+              <caret line="60" column="3" lean-forward="false" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
               <folding>
-                <marker date="1492496731123" expanded="true" signature="251:338" ph="..." />
+                <marker date="1492504781974" expanded="true" signature="801:888" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basis.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testJs.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/testJs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testHtml.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testHtml.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basis.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basis.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="287" column="34" lean-forward="false" selection-start-line="287" selection-start-column="25" selection-end-line="287" selection-end-column="34" />
+            <state relative-caret-position="199">
+              <caret line="295" column="8" lean-forward="true" selection-start-line="295" selection-start-column="8" selection-end-line="299" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#p#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -48,6 +68,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>组件</find>
+      <find>component</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -55,6 +81,8 @@
         <option value="$PROJECT_DIR$/js/cartJs.js" />
         <option value="$PROJECT_DIR$/basis.html" />
         <option value="$PROJECT_DIR$/js/basis.js" />
+        <option value="$PROJECT_DIR$/js/testJs.js" />
+        <option value="$PROJECT_DIR$/testHtml.html" />
       </list>
     </option>
   </component>
@@ -85,6 +113,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -114,12 +143,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../VueDemo/vueTest/vueTwo" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value=",&#9;null&#9;null" />
@@ -223,12 +251,14 @@
       <updated>1492390290297</updated>
       <workItem from="1492390292609" duration="18936000" />
       <workItem from="1492476406491" duration="5627000" />
-      <workItem from="1492483911424" duration="7746000" />
+      <workItem from="1492483911424" duration="14684000" />
+      <workItem from="1492563272470" duration="912000" />
+      <workItem from="1492648846502" duration="1921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32309000" />
+    <option name="totallyTimeSpent" value="42080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -265,10 +295,40 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/basis.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1357">
+          <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
           <folding>
-            <marker date="1492496731123" expanded="true" signature="251:338" ph="..." />
+            <marker date="1492504781974" expanded="true" signature="801:888" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7130">
+          <caret line="310" column="13" lean-forward="true" selection-start-line="310" selection-start-column="13" selection-end-line="310" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#p#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/basis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1357">
+          <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding>
+            <marker date="1492504781974" expanded="true" signature="801:888" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7222">
+          <caret line="314" column="0" lean-forward="false" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#p#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -278,7 +338,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1492496731123" expanded="true" signature="251:338" ph="..." />
+            <marker date="1492504781974" expanded="true" signature="801:888" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/basis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1492504781974" expanded="true" signature="801:888" ph="..." />
           </folding>
         </state>
       </provider>
@@ -294,21 +364,37 @@
     <entry file="file://$PROJECT_DIR$/cart.html" />
     <entry file="file://$PROJECT_DIR$/js/basis.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="114" column="19" lean-forward="false" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+        <state relative-caret-position="-69">
+          <caret line="60" column="3" lean-forward="false" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
           <folding>
-            <marker date="1492496731123" expanded="true" signature="251:338" ph="..." />
+            <marker date="1492504781974" expanded="true" signature="801:888" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testHtml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basis.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="287" column="34" lean-forward="false" selection-start-line="287" selection-start-column="25" selection-end-line="287" selection-end-column="34" />
+        <state relative-caret-position="199">
+          <caret line="295" column="8" lean-forward="true" selection-start-line="295" selection-start-column="8" selection-end-line="299" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#p#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/testJs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
